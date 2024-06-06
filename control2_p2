@@ -1,0 +1,11 @@
+names = []
+
+for i in range(7):
+    name = input("Ingresa los nombres: ")
+    names.append(name)
+
+names = [name for name in names if not name.lower().endswith('a')]
+
+print("Lista despues de haber eliminado los nombres finalizados en pedro 'a':")
+for name in names:
+    print(name)

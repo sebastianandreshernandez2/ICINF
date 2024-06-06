@@ -1,0 +1,14 @@
+palabras = []
+
+print("Ingrese las palabras que quiera. (Presione Enter para finalizar).")
+
+while True:
+    p = input("Palabra: ")
+    if not p:
+        break
+    palabras.append(p)
+
+if palabras:
+    print("La palabra más corta tiene", len(min(palabras,)), "caracteres.")
+else:
+    print("No se ingresaron palabras.")
